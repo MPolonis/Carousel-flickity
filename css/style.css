@@ -1,0 +1,31 @@
+.carousel-cell {
+  width: 100%;
+  /* full width */
+  height: 50%;
+  /* height of carousel */
+  min-height: 250px;
+  margin-right: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.carousel {
+  background: #EEE;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
