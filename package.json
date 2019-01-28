@@ -41,5 +41,7 @@
     "onchange": "^5.1.0",
     "rimraf": "^2.6.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "flickity-hash": "^1.0.3"
+  }
 }
