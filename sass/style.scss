@@ -36,23 +36,15 @@ body { font-family: sans-serif; }
   height: 50vh;
   min-height: 250px;
   margin-right: 10px;
-  background: #8C8;
+  background: #565546;
   counter-increment: gallery-cell;
 }
 
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
 .container {
   max-width: 600px;
   display: flex;
   align-content: center;
+  padding-left: 10px;
 }
 .flickity-page-dots {
   display: none;
@@ -68,4 +60,10 @@ body { font-family: sans-serif; }
   height: 20px;
   width: 0;
   background: #333;
+}
+
+.background-photo {
+  background-size: auto; 
+  background-position: center; 
+  background-repeat: no-repeat;
 }
