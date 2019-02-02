@@ -42,11 +42,9 @@ body {
 }
 
 .container {
-  max-width: 600px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
   padding-left: 10px;
 }
 
@@ -56,6 +54,10 @@ body {
 
 .button {
   font-size: 22px;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  z-index: 23;
 }
 
 .button-group {
