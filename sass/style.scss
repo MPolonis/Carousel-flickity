@@ -24,7 +24,11 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+header {
+  padding-top: 20px;
+  font-size: 24px;
+  color: #fff;
+}
 body { font-family: sans-serif; }
 
 .carousel {

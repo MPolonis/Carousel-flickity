@@ -13,35 +13,44 @@
             <button class="button button--next-wrapped">Next wrapped</button>
         </div>
         <div class="carousel">
-            <div class="carousel-cell background-photo" id="carousel-cell1" style="background-image: url(https://i.content4travel.com/cms/img/u/kraj/2/australia_2.jpg?version=180329-14);">
-                <div class="container">
-                    <p>Example1</p>
-                </div>
-            </div>
-            <div class="carousel-cell background-photo" id="carousel-cell2" style="background-image: url(https://www.australia.com/content/australia/en_us/places/sydney-and-surrounds/guide-to-sydney/jcr:content/image.adapt.1200.HIGH.jpg);">
-                <div class="container">
-                    <p>Example2</p>
-                </div>
-            </div>
-            <div class="carousel-cell background-photo" id="carousel-cell3" style="background-image: url(http://www.bucurestifm.ro/wp-content/uploads/sites/2/2014/12/australia-sidney_7374_1920x1200.jpg);">
-                <div class="container">
-                    <p>Example3</p>
-                </div>
-            </div>
-            <div class="carousel-cell background-photo" id="carousel-cell4" style="background-image: url(https://i.gocollette.com/img/destination-page/australia/australia/australia-ms1.jpg?h=719&w=1279&la=en-CA);">
-                <div class="container">
-                    <p>Example4</p>
-                </div>
-            </div>
-            <div class="carousel-cell background-photo" id="carousel-cell5" style="background-image: url(http://rocknroad.com.pl/wp-content/uploads/2017/12/DSC_0193-2.jpg);">
-                <div class="container">
-                    <p>Example5</p>
-                </div>
-            </div>
         </div>
         <div class="progress-bar"></div>
+        <script id="template-item" type="x-tmpl-mustache">
+            {{{results}}} {{{description}}}  {{{title}}}
+            </div>
+        </script>
+        <script>
+            var slides = [
+                {
+                    image: 'Photo 1',
+                    title: '<div class="container"><header>Example1</header></div>',
+                    description: '<div class="carousel-cell background-photo" id="carousel-cell1" style="background-image: url(https://i.content4travel.com/cms/img/u/kraj/2/australia_2.jpg?version=180329-14);">'
+                },
+                {
+                    image: 'Photo 2',
+                    title: '<div class="container"><header>Example2</header></div>',
+                    description: '<div class="carousel-cell background-photo" id="carousel-cell2" style="background-image: url(https://www.australia.com/content/australia/en_us/places/sydney-and-surrounds/guide-to-sydney/jcr:content/image.adapt.1200.HIGH.jpg);">'
+                },
+                {
+                    image: 'Photo 3',
+                    title: '<div class="container"><header>Example3</header></div>',
+                    description: '<div class="carousel-cell background-photo" id="carousel-cell3" style="background-image: url(http://www.bucurestifm.ro/wp-content/uploads/sites/2/2014/12/australia-sidney_7374_1920x1200.jpg);"> '
+                },
+                {
+                    image: 'Photo 4',
+                    title: '<div class="container"><header>Example4</header></div>',
+                    description: '<div class="carousel-cell background-photo" id="carousel-cell4" style="background-image: url(https://i.gocollette.com/img/destination-page/australia/australia/australia-ms1.jpg?h=719&w=1279&la=en-CA);">'
+                },
+                {
+                    image: 'Photo 5',
+                    title: '<div class="container"><header>Example5</header></div>',
+                    description: '<div class="carousel-cell background-photo" id="carousel-cell5" style="background-image: url(http://rocknroad.com.pl/wp-content/uploads/2017/12/DSC_0193-2.jpg);">'
+                }
+            ];
+        </script>
         <script src="vendor/flickity.pkgd.min.js"></script>
         <script src="js/hash.js"></script>
+        <script src="vendor/mustache.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
