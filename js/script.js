@@ -35,10 +35,11 @@ flkty.on('scroll', function (progress) {
 
 
 window.initMap = function () {
-  var uluru = { lat: -25.344, lng: 131.036 };
-  var map = new google.maps.Map(
-    document.getElementById('map'), { zoom: 4, center: uluru });
-  var marker = new google.maps.Marker({ position: uluru, map: map });
+  var map = new google.maps.Map(document.getElementById('map'), { zoom: 3, center: { lat: -37.858, lng: 144.966 } });
+
+  for (var i = 0; i < slides.length; i++) {
+    var marker = new google.maps.Marker({ position: slides[i].coords, map: map });
+  }
+
 }
 
-initMap();
