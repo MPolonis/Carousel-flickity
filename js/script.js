@@ -37,11 +37,15 @@ flkty.on('scroll', function (progress) {
 window.initMap = function () {
   var map = new google.maps.Map(document.getElementById('map'), { zoom: 3, center: { lat: -37.858, lng: 144.966 } });
 
-  for (var i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     var marker = new google.maps.Marker({ position: slides[i].coords, map: map });
-
+    
     marker.addListener('click', function () {
       flkty.select(i);
+    });
+    flkty.on('change', function (i) {
+      map.panTo(slides[i].coords);
+      map.setZoom(5);
     });
   }
 
