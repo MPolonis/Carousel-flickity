@@ -1,21 +1,69 @@
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-body { font-family: sans-serif; }
+header {
+  padding-top: 20px;
+  font-size: 30px;
+  color: #ff5000;
+}
 
-.carousel { background: #EEE; }
+body {
+  font-family: sans-serif;
+}
 
-.carousel-cell { width: 100%; height: 50vh; min-height: 250px; margin-right: 10px; background: #565546; counter-increment: gallery-cell; }
+.carousel {
+  background: #EEE;
+}
 
-.container { max-width: 1200px; text-align: center; margin: 0 auto; padding-left: 10px; }
+.carousel-cell {
+  width: 100%;
+  height: 50vh;
+  min-height: 250px;
+  margin-right: 10px;
+  background: #565546;
+  counter-increment: gallery-cell;
+}
 
-.flickity-page-dots { display: none; }
+.container {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 10px;
+}
 
-.button { font-size: 22px; position: absolute; top: 40px; right: 10px; z-index: 23; }
+.flickity-page-dots {
+  display: none;
+}
 
-.button-group { margin-bottom: 20px; }
+.button {
+  font-size: 22px;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  z-index: 23;
+}
 
-.progress-bar { height: 20px; width: 0; background: #333; }
+.button-group {
+  margin-bottom: 20px;
+}
 
-.background-photo { background-size: auto; background-position: center; background-repeat: no-repeat; }
+.progress-bar {
+  height: 20px;
+  width: 0;
+  background: #333;
+}
 
-#map { height: 400px; /* The height is 400 pixels */ width: 100%; /* The width is the width of the web page */ }
+.background-photo {
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+/*# sourceMappingURL=style.css.map */
