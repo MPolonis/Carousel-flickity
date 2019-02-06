@@ -1,34 +1,4 @@
-<<<<<<< HEAD
-* {
-  box-sizing: border-box;
-}
-=======
-/* {box-sizing: border-box;}*/
-/*.main-carousel {
-  width: 66%; 
-  height: 50%; 
-  min-height: 250px;
-}
-.carousel-cell {
-    
-  }
-  .container {
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
-  }
-
-.carousel {
-  background: #EEE;
-}
-.flickity-page-dots {
-  display: none;
-}
-*/
 * { box-sizing: border-box; }
->>>>>>> task2
-
-header { padding-top: 20px; font-size: 24px; color: #fff; }
 
 body { font-family: sans-serif; }
 
@@ -47,3 +17,5 @@ body { font-family: sans-serif; }
 .progress-bar { height: 20px; width: 0; background: #333; }
 
 .background-photo { background-size: auto; background-position: center; background-repeat: no-repeat; }
+
+#map { height: 400px; /* The height is 400 pixels */ width: 100%; /* The width is the width of the web page */ }

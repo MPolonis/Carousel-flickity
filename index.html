@@ -15,6 +15,9 @@
         <div class="carousel">
         </div>
         <div class="progress-bar"></div>
+
+        <div id="map"></div>
+
         <script id="template-item" type="x-tmpl-mustache">
             {{{results}}} {{{description}}}  {{{title}}}
             </div>
@@ -24,27 +27,32 @@
                 {
                     image: 'Photo 1',
                     title: '<div class="container"><header>Example1</header></div>',
-                    description: '<div class="carousel-cell background-photo" id="carousel-cell1" style="background-image: url(https://i.content4travel.com/cms/img/u/kraj/2/australia_2.jpg?version=180329-14);">'
+                    description: '<div class="carousel-cell background-photo" id="carousel-cell1" style="background-image: url(https://i.content4travel.com/cms/img/u/kraj/2/australia_2.jpg?version=180329-14);">',
+                    coords: { lat: -37.858, lng: 144.966 }
                 },
                 {
                     image: 'Photo 2',
                     title: '<div class="container"><header>Example2</header></div>',
-                    description: '<div class="carousel-cell background-photo" id="carousel-cell2" style="background-image: url(https://www.australia.com/content/australia/en_us/places/sydney-and-surrounds/guide-to-sydney/jcr:content/image.adapt.1200.HIGH.jpg);">'
+                    description: '<div class="carousel-cell background-photo" id="carousel-cell2" style="background-image: url(https://www.australia.com/content/australia/en_us/places/sydney-and-surrounds/guide-to-sydney/jcr:content/image.adapt.1200.HIGH.jpg);">',
+                    coords: { lat: -33.852, lng: 151.210 }
                 },
                 {
                     image: 'Photo 3',
                     title: '<div class="container"><header>Example3</header></div>',
-                    description: '<div class="carousel-cell background-photo" id="carousel-cell3" style="background-image: url(http://www.bucurestifm.ro/wp-content/uploads/sites/2/2014/12/australia-sidney_7374_1920x1200.jpg);"> '
+                    description: '<div class="carousel-cell background-photo" id="carousel-cell3" style="background-image: url(https://australis.pl/wp-content/uploads/2016/03/stolica-australii.jpg);">',
+                    coords: { lat: -35.307, lng: 149.124 }
                 },
                 {
                     image: 'Photo 4',
                     title: '<div class="container"><header>Example4</header></div>',
-                    description: '<div class="carousel-cell background-photo" id="carousel-cell4" style="background-image: url(https://i.gocollette.com/img/destination-page/australia/australia/australia-ms1.jpg?h=719&w=1279&la=en-CA);">'
+                    description: '<div class="carousel-cell background-photo" id="carousel-cell4" style="background-image: url(https://i.gocollette.com/img/destination-page/australia/australia/australia-ms1.jpg?h=719&w=1279&la=en-CA);">',
+                    coords: { lat: -25.344, lng: 131.036 }
                 },
                 {
                     image: 'Photo 5',
                     title: '<div class="container"><header>Example5</header></div>',
-                    description: '<div class="carousel-cell background-photo" id="carousel-cell5" style="background-image: url(http://rocknroad.com.pl/wp-content/uploads/2017/12/DSC_0193-2.jpg);">'
+                    description: '<div class="carousel-cell background-photo" id="carousel-cell5" style="background-image: url(http://rocknroad.com.pl/wp-content/uploads/2017/12/DSC_0193-2.jpg);">',
+                    coords: { lat: -22.906, lng: 144.338 }
                 }
             ];
         </script>
@@ -52,5 +60,6 @@
         <script src="js/hash.js"></script>
         <script src="vendor/mustache.js"></script>
         <script src="js/script.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJUTPydGAimC-c88u_WQ1kCTegpHY52eM&callback=initMap"></script>
     </body>
 </html>
