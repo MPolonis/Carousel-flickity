@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
 }
+
 header {
   padding-top: 20px;
   font-size: 30px;
@@ -22,6 +23,7 @@ body { font-family: sans-serif; }
   counter-increment: gallery-cell;
 }
 
+
 .container {
   max-width: 1200px;
   text-align: center;
@@ -39,9 +41,6 @@ body { font-family: sans-serif; }
   z-index: 23;
 }
 
-.button-group {
-  margin-bottom: 20px;
-}
 .progress-bar {
   height: 20px;
   width: 0;
