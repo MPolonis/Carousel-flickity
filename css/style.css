@@ -12,10 +12,6 @@ body {
   font-family: sans-serif;
 }
 
-.flickity-viewport {
-  margin-top: -1.5%;
-}
-
 .carousel {
   background: #EEE;
 }
@@ -46,10 +42,6 @@ body {
   top: 40px;
   right: 10px;
   z-index: 23;
-}
-
-.button-group {
-  margin-bottom: 20px;
 }
 
 .progress-bar {

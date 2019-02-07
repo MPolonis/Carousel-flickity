@@ -10,10 +10,6 @@ header {
 }
 body { font-family: sans-serif; }
 
-.flickity-viewport { 
-  margin-top: -1.5%; 
-}
-
 .carousel {
   background: #EEE;
 }
@@ -26,6 +22,7 @@ body { font-family: sans-serif; }
   background: #565546;
   counter-increment: gallery-cell;
 }
+
 
 .container {
   max-width: 1200px;
@@ -44,9 +41,6 @@ body { font-family: sans-serif; }
   z-index: 23;
 }
 
-.button-group {
-  margin-bottom: 20px;
-}
 .progress-bar {
   height: 20px;
   width: 0;
